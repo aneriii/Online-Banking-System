@@ -1,0 +1,208 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif; /* Using the new font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2; /* Light background color */
+}
+
+/* Header */
+header {
+    background-color: rgba(44, 62, 80,1); /* Vibrant blue color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #5cb85c; /* Green hover color */
+}
+
+/* Hero Section */
+.hero {
+     text-align: center; 
+     padding: 4rem 2rem; 
+     background: url('bg3.webp') no-repeat center/cover; 
+     color: white; height: 70vh; /* Full height of the viewport */ 
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+}
+
+.hero .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(44, 62, 80,1); /* Darker semi-transparent background */
+    padding: 2rem;
+    border-radius: 15px; /* Rounded border */
+    color: white;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.hero .cta-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #5cb85c; /* Matching green button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.hero .cta-button:hover {
+    background-color: #4cae4c; /* Slightly darker green hover color */
+}
+
+/* Spacer Section */
+.spacer {
+    height: 400px; /* Adjust this value to create the desired amount of space */
+}
+
+/* Features Section */
+/* Features Section */
+.features {
+    padding: 4rem 2rem; /* Increased padding for more spacing */
+    background-color: #fff; /* White background for contrast */
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem; /* Larger heading font size */
+    margin-bottom: 2rem;
+    color: rgba(44, 62, 80, 1); /* Vibrant blue color */
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 2rem; /* Increased gap between cards */
+}
+
+.feature-item {
+    background-color: #fff; /* White card background */
+    border-radius: 15px; /* Slightly more rounded corners */
+    padding: 2rem; /* Increased padding for a spacious look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for better definition */
+    text-align: center; /* Centered text alignment */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover animation */
+}
+
+.feature-item:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.feature-item h3 {
+    font-size: 1.75rem; /* Slightly larger font size */
+    color: rgba(44, 62, 80, 1); /* Vibrant blue color */
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #555; /* Subtle text color for better readability */
+    margin-bottom: 1.5rem;
+    line-height: 1.6; /* Improved line spacing */
+}
+
+.feature-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #5cb85c; /* Green button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.feature-button:hover {
+    background-color: #4cae4c; /* Slightly darker green hover color */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(44, 62, 80,1); /* Vibrant blue color */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+footer a {
+    color: #5cb85c; /* Matching green color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .features ul li {
+        font-size: 1rem;
+    }
+
+    .feature-item {
+        width: 100%; /* Full width on small screens */
+    }
+}
